@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*, html, body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  overflow: 0;
+}
+.weather-app {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../src/img/weather_bg.webp);
+  background-repeat: repeat;
+}
+
+.conteiner-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+}
+
+.conteiner-box h1 {
+  font-size: 120px;
+  color: rgba(255,255,255,.8);
+}
+.conteiner-box h1 span {
+  font-size: 40px;
+  font-weight: 400;
+}
+.conteiner-box h2 {
+  font-size: 30px;
+  color: rgba(255,255,255,.8);
+  font-weight: 400;
+}
+.conteiner-box h3 {
+  margin-top: 70px;
+  font-size: 50px;
+  color: rgba(255,255,255,.8);
+  font-weight: 600;
+  opacity: .9;
+}
+.conteiner-box h4 {
+  font-size: 50px;
+  color: rgba(255,255,255,.8);
+  font-weight: 600;
+  opacity: .9;
+}
+.conteiner-box h5 {
+  font-size: 30px;
+  color: rgba(255,255,255,.8);
+  font-weight: 600;
+  opacity: .9;
+  text-align: right;
+}
+
+.conteiner-box.bottom {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 150px;
+  background-color: rgba(0,0,0, .3);
+  border-radius: 30px;
+}
+.flex-wrap {
+  display: flex;
+  align-items: center;
+}
+.flex-wrap li{
+  list-style: none;
+  padding: 0 30px;
+  border-right: 1px solid rgba(255,255,255,.3);
+}
+.flex-wrap li:last-child  {
+  border-right: none;
+}
+.button-wrap {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width : 816px) {
+  .conteiner-box {
+    display: block;
+    text-align: center;
+  }
+  .conteiner-box h1 {
+    margin-top: 70px;
+    font-size: 80px;
+}
+.conteiner-box h2 {
+  font-size: 30px;
+}
+  .conteiner-box h3 {
+    font-size: 30px;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,.3);
+  }
+  .conteiner-box h5 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  .conteiner-box h5 {text-align: center;}
+  .button-wrap {
+    margin: 30px 0;
+    justify-content: center;
+  }
+
+  .flex-wrap{
+    display: block;
+
+  }
+  .flex-wrap li {
+    padding: 0;
+    text-align: center;
+    border-right: none;
+  }
+  .conteiner-box.bottom {
+    padding: 50px 10%;
+}
+  
+}
